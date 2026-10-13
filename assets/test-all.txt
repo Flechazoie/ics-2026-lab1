@@ -1,0 +1,47 @@
+rm -f *.o btest fshow ishow *~
+gcc -O -Wall -fwrapv -m32 -o btest bits.c btest.c decl.c tests.c -lm
+gcc -O -Wall -fwrapv -m32 -o fshow fshow.c
+gcc -O -Wall -fwrapv -m32 -o ishow ishow.c
+signMask: 1/2 operators
+bitXor: 7/8 operators
+negativePart: 4/6 operators
+copyByteWithin: 9/12 operators
+logicalShift: 6/20 operators
+swapNibblePairs: 9/18 operators
+secondLowestZeroBit: 7/8 operators
+oddParity: 12/56 operators
+rotateRightBits: 12/16 operators
+roundEvenPow2: 11/24 operators
+midpointTowardFirst: 20/32 operators
+isBetweenEitherOrder: 29/48 operators
+mul5Sat: 17/30 operators
+classifyAdd3: 31/52 operators
+floatScaleThreeHalves: 36/60 operators
+floatRoundEven: 22/65 operators
+float_i2f: 28/40 operators
+bitCount: 24/40 operators
+bitReverse: 34/34 operators
+All 19 functions passed operator checks.
+operator check passed
+Score	Rating	Errors	Function
+ 1	1	0	signMask
+ 2	2	0	bitXor
+ 3	3	0	negativePart
+ 4	4	0	copyByteWithin
+ 4	4	0	logicalShift
+ 4	4	0	swapNibblePairs
+ 4	4	0	secondLowestZeroBit
+ 5	5	0	oddParity
+ 5	5	0	rotateRightBits
+ 5	5	0	roundEvenPow2
+ 5	5	0	midpointTowardFirst
+ 7	7	0	isBetweenEitherOrder
+ 7	7	0	mul5Sat
+ 7	7	0	classifyAdd3
+ 7	7	0	floatScaleThreeHalves
+ 10	10	0	floatRoundEven
+ 10	10	0	float_i2f
+ 10	10	0	bitCount
+ 10	10	0	bitReverse
+Total points: 110/110
+all checks passed: 110/110
