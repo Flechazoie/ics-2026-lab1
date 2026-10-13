@@ -110,8 +110,7 @@ make all
 
 这题的操作数上限比较紧。掩码从 `0x0000ffff` 开始，通过与自身左移后的值异或，依次得到字节、半字节、2 位和 1 位掩码，避免分别构造。最终使用 34 次操作，正好达到上限。
 
-## 参考资料与辅助工具
+## 参考资料
 
 - [课程 Lab1 实验说明](https://ics-26fall-fdu.github.io/labs/lab1-data-lab/)。
 - [课程 DataLab 模板仓库](https://github.com/ICS-26Fall-FDU/DataLab)中的 `README.md`、`bits.c` 题目说明及官方测试工具。
-- OpenAI Codex：辅助推导和生成代码、执行测试及整理报告。
